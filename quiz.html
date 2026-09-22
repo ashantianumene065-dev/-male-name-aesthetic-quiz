@@ -174,7 +174,9 @@
 
     let currentQuestion = 0;
 
-    function showQuestion() {
+const answerButtons = document.querySelectorAll(".answer");
+
+function showQuestion() {
   const question = questions[currentQuestion];
 
   document.getElementById("question-number").textContent =
@@ -183,14 +185,12 @@
   document.getElementById("question-text").textContent =
     question.question;
 
-    
-   const answerButtons = document.querySelectorAll(".answer");
+  answerButtons.forEach((button, index) => {
+    button.textContent = question.answers[index];
+  });
+}
 
-answerButtons.forEach((button, index) => {
-  button.textContent = question.answers[index];
-}); }
-
-    answerButtons.forEach((button) => {
+answerButtons.forEach((button) => {
   button.addEventListener("click", () => {
     currentQuestion++;
 
