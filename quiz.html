@@ -112,16 +112,16 @@
 
     <section class="content">
 
-      <div class="number">
+     <div class="number" id="question-number">
         Question 01
       </div>
 
-      <h1>
+   <h1 id="question-text">
         Your Friday night has absolutely no plans.
         Where do you end up?
       </h1>
 
-      <div class="answers">
+    <div class="answers" id="answers">
 
         <button class="answer">
           At home, surrounded by my things.
@@ -149,6 +149,59 @@
 
   </main>
 
+  <script>
+  const questions = [
+    {
+      question: "Your Friday night has absolutely no plans. Where do you end up?",
+      answers: [
+        "At home, surrounded by my things.",
+        "Somewhere dimly lit with a drink.",
+        "In somebody's car. Don't ask whose.",
+        "Wherever everyone else ended up."
+      ]
+    },
+
+    {
+      question: "You have $80 you absolutely do not need to spend. What happens to it?",
+      answers: [
+        "I buy something for my room.",
+        "Clothes. Immediately.",
+        "Food, drinks, and whatever happens afterward.",
+        "I somehow spend it on six completely unrelated things."
+      ]
+    }
+  ];
+
+    let currentQuestion = 0;
+
+    function showQuestion() {
+  const question = questions[currentQuestion];
+
+  document.getElementById("question-number").textContent =
+    "Question " + String(currentQuestion + 1).padStart(2, "0");
+
+  document.getElementById("question-text").textContent =
+    question.question;
+
+    
+   const answerButtons = document.querySelectorAll(".answer");
+
+answerButtons.forEach((button, index) => {
+  button.textContent = question.answers[index];
+}); }
+
+    answerButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+      showQuestion();
+    }
+  });
+});
+
+showQuestion();
+</script>
 </body>
 
 </html>
