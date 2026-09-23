@@ -631,4 +631,754 @@ const questions = [
     },
     {
       text: "Messy ponytail. We have places to be.",
-      score: {messy:
+      score: {messy:2, tomboy:1, casual:2}
+    },
+    {
+      text: "Dark, sleek and relatively controlled.",
+      score: {polished:3, sensual:1, muted:1}
+    }
+  ]
+},
+
+{
+  q: "Pick a meal with absolutely no concern for nutritional balance.",
+  a: [
+    {
+      text: "Grilled cheese and tomato soup.",
+      score: {cozy:3, wholesome:2, homebody:1}
+    },
+    {
+      text: "Diner food at an unreasonable hour.",
+      score: {retro:2, social:2, chaotic:1}
+    },
+    {
+      text: "Iced coffee and something purchased while shopping.",
+      score: {y2k:3, suburban:2, feminine:1}
+    },
+    {
+      text: "Wine counts as dinner if you believe in yourself.",
+      score: {sensual:3, glam:2, chaotic:1}
+    }
+  ]
+},
+
+{
+  q: "Your phone dies while you're out. Your response?",
+  a: [
+    {
+      text: "Peace at last.",
+      score: {reserved:3, retro:1, homebody:1}
+    },
+    {
+      text: "Annoying, but I'll survive.",
+      score: {polished:1, wholesome:1, tomboy:1}
+    },
+    {
+      text: "I immediately begin asking everyone for a charger.",
+      score: {social:2, chaotic:1, y2k:1}
+    },
+    {
+      text: "This has destroyed the infrastructure of my evening.",
+      score: {chaotic:3, social:1}
+    }
+  ]
+},
+
+{
+  q: "Which color situation feels most correct?",
+  a: [
+    {
+      text: "Pink. Obnoxiously pink.",
+      score: {colorful:3, feminine:3, y2k:2}
+    },
+    {
+      text: "Brown, cream, faded green, warm red.",
+      score: {retro:2, cozy:2, muted:2}
+    },
+    {
+      text: "Black, wine red, gold.",
+      score: {sensual:3, glam:2, muted:1}
+    },
+    {
+      text: "Whatever colors happened to end up together.",
+      score: {colorful:2, chaotic:2, indie:1}
+    }
+  ]
+},
+
+{
+  q: "You are getting dressed to run one extremely boring errand.",
+  a: [
+    {
+      text: "Jeans, fitted top, little bag. I still have standards.",
+      score: {polished:2, feminine:2, suburban:1}
+    },
+    {
+      text: "Sweats. The public will cope.",
+      score: {cozy:2, tomboy:2, messy:1}
+    },
+    {
+      text: "Somehow I am overdressed.",
+      score: {glam:3, feminine:2}
+    },
+    {
+      text: "Whatever was already on the chair.",
+      score: {messy:3, chaotic:1}
+    }
+  ]
+},
+
+{
+  q: "Choose an object you inexplicably feel emotionally attached to.",
+  a: [
+    {
+      text: "An old digital camera.",
+      score: {y2k:3, indie:2, romantic:1}
+    },
+    {
+      text: "A perfume bottle.",
+      score: {glam:3, feminine:2, sensual:1}
+    },
+    {
+      text: "A scratched CD.",
+      score: {y2k:2, indie:3, grunge:1}
+    },
+    {
+      text: "A weird piece of furniture nobody else would keep.",
+      score: {retro:3, homebody:2, cozy:1}
+    }
+  ]
+},
+
+{
+  q: "Pick your preferred level of personal organization.",
+  a: [
+    {
+      text: "Everything has a place.",
+      score: {polished:3, domestic:2}
+    },
+    {
+      text: "Organized enough that I know where things are.",
+      score: {suburban:1, wholesome:1, polished:1}
+    },
+    {
+      text: "It looks messy, but I understand the ecosystem.",
+      score: {messy:3, indie:1}
+    },
+    {
+      text: "I am frequently searching for objects I was just holding.",
+      score: {chaotic:3, messy:2}
+    }
+  ]
+},
+
+{
+  q: "The night has gone on much longer than expected. Where are you at 2:17 AM?",
+  a: [
+    {
+      text: "Home. I left hours ago.",
+      score: {homebody:3, reserved:2, cozy:1}
+    },
+    {
+      text: "Still talking in somebody's kitchen.",
+      score: {social:2, cozy:2, domestic:1}
+    },
+    {
+      text: "In a car with music playing.",
+      score: {y2k:2, indie:2, romantic:1}
+    },
+    {
+      text: "Somewhere I absolutely did not plan to be.",
+      score: {chaotic:3, social:2}
+    }
+  ]
+},
+
+{
+  q: "What kind of photograph belongs in your personal archive?",
+  a: [
+    {
+      text: "Flash photo in a bathroom mirror.",
+      score: {y2k:3, social:2, messy:1}
+    },
+    {
+      text: "Soft blurry photo in warm afternoon light.",
+      score: {romantic:3, indie:2, cozy:1}
+    },
+    {
+      text: "A composed photo where the outfit is doing exactly what it should.",
+      score: {polished:3, glam:2}
+    },
+    {
+      text: "An objectively bizarre candid that requires context.",
+      score: {chaotic:3, social:1, colorful:1}
+    }
+  ]
+},
+
+{
+  q: "Final question. What matters most to an aesthetic?",
+  a: [
+    {
+      text: "The tiny ordinary details.",
+      score: {domestic:2, cozy:2, romantic:1, indie:1}
+    },
+    {
+      text: "Looking unmistakably like yourself.",
+      score: {polished:1, colorful:1, feminine:1, indie:1}
+    },
+    {
+      text: "The atmosphere. The feeling matters more than individual objects.",
+      score: {romantic:2, sensual:2, retro:1}
+    },
+    {
+      text: "Whether the entire thing has lore.",
+      score: {chaotic:2, colorful:2, indie:2}
+    }
+  ]
+}
+
+];
+
+
+/*
+============================================================
+RESULT ARCHETYPES
+============================================================
+
+Values run roughly from 0 to 10.
+
+This is the ONLY section that needs more entries when you create
+new male-name women later.
+*/
+
+const RESULTS = {
+
+"Sammy": {
+  profile: {
+    y2k:8, retro:3, polished:2, messy:8, feminine:4, tomboy:5,
+    romantic:3, grunge:6, glam:2, cozy:6, social:3, homebody:7,
+    chaotic:5, reserved:7, suburban:6, urban:3, colorful:3,
+    muted:7, sensual:2, wholesome:5, indie:9, domestic:4
+  },
+  subtitle: "The Awkward Indie Archivist",
+  description:
+    "You are Sammy: physical media, dark hair, cluttered rooms, drugstore errands and the faint sense that somebody photographed your entire life in 2007. You are observant, unpolished in a deliberate-looking way, and spiritually in possession of at least one scratched CD."
+},
+
+"Jeremy": {
+  profile: {
+    y2k:7, retro:4, polished:4, messy:5, feminine:7, tomboy:2,
+    romantic:7, grunge:2, glam:4, cozy:9, social:5, homebody:6,
+    chaotic:3, reserved:4, suburban:7, urban:3, colorful:6,
+    muted:4, sensual:3, wholesome:8, indie:5, domestic:8
+  },
+  subtitle: "The Warm Domestic Romantic",
+  description:
+    "You are Jeremy: diner breakfasts, cameras, grilled cheese, leather jackets and a bedroom that looks genuinely lived in. Your femininity is warm rather than pristine. You make ordinary life feel suspiciously cinematic."
+},
+
+"Liam": {
+  profile: {
+    y2k:9, retro:2, polished:2, messy:8, feminine:4, tomboy:6,
+    romantic:3, grunge:6, glam:2, cozy:4, social:5, homebody:3,
+    chaotic:7, reserved:4, suburban:7, urban:3, colorful:3,
+    muted:6, sensual:4, wholesome:3, indie:7, domestic:2
+  },
+  subtitle: "The Passenger-Seat Artifact",
+  description:
+    "You are Liam: old car stereos, messy purses, chipped polish, coffee and the particular freedom of not having your life completely together. Your natural habitat is a slightly questionable vehicle with very good music."
+},
+
+"Richard": {
+  profile: {
+    y2k:7, retro:5, polished:7, messy:4, feminine:9, tomboy:0,
+    romantic:6, grunge:2, glam:9, cozy:6, social:5, homebody:5,
+    chaotic:4, reserved:5, suburban:4, urban:7, colorful:5,
+    muted:5, sensual:9, wholesome:2, indie:3, domestic:5
+  },
+  subtitle: "The Perfumed Woman of Questionable Judgment",
+  description:
+    "You are Richard. Satin bedding, perfume bottles, cigarettes, floral curtains and a face that suggests you have already heard enough. Your world is feminine, intimate, slightly exhausted and much more glamorous than the circumstances require."
+},
+
+"Lenny": {
+  profile: {
+    y2k:3, retro:9, polished:4, messy:5, feminine:9, tomboy:1,
+    romantic:10, grunge:2, glam:6, cozy:9, social:4, homebody:7,
+    chaotic:3, reserved:5, suburban:4, urban:3, colorful:8,
+    muted:3, sensual:5, wholesome:7, indie:8, domestic:6
+  },
+  subtitle: "The Romantic Bohemian",
+  description:
+    "You are Lenny: huge hair, rugs, dresses, fur trim, thrift-store treasures and rooms that appear to have accumulated across several decades. You are romantic without being delicate and vintage without behaving like a museum."
+},
+
+"Oliver": {
+  profile: {
+    y2k:9, retro:2, polished:3, messy:7, feminine:5, tomboy:5,
+    romantic:2, grunge:5, glam:2, cozy:6, social:4, homebody:6,
+    chaotic:4, reserved:5, suburban:8, urban:2, colorful:4,
+    muted:6, sensual:2, wholesome:7, indie:5, domestic:4
+  },
+  subtitle: "The Accidental 2007 Girl",
+  description:
+    "You are Oliver: hoodies, low-rise jeans, leather jackets, ordinary bedrooms and makeup bags that have seen things. Nothing about you is trying to recreate the 2000s. You simply look as though someone found your old digital-camera folder."
+},
+
+"Noah": {
+  profile: {
+    y2k:6, retro:4, polished:9, messy:2, feminine:9, tomboy:0,
+    romantic:4, grunge:2, glam:9, cozy:3, social:6, homebody:3,
+    chaotic:3, reserved:6, suburban:3, urban:9, colorful:2,
+    muted:9, sensual:10, wholesome:1, indie:2, domestic:2
+  },
+  subtitle: "The Sleek Late-Night Woman",
+  description:
+    "You are Noah: black, fishnets, heels, gold jewelry, wine and controlled dark hair. You look grown even when doing something stupid. Your aesthetic has the energy of leaving somewhere at midnight without explaining where you are going next."
+},
+
+"Elijah": {
+  profile: {
+    y2k:7, retro:6, polished:3, messy:6, feminine:6, tomboy:3,
+    romantic:7, grunge:4, glam:3, cozy:8, social:4, homebody:6,
+    chaotic:5, reserved:6, suburban:6, urban:3, colorful:6,
+    muted:6, sensual:3, wholesome:5, indie:8, domestic:5
+  },
+  subtitle: "The Hazy Autumn Oddity",
+  description:
+    "You are Elijah: fur hoods, striped shirts, giant sunglasses, old makeup palettes and dim yellow bathrooms. Everything around you feels warm, slightly strange and preserved from an autumn nobody can precisely date."
+},
+
+"Theodore": {
+  profile: {
+    y2k:9, retro:2, polished:7, messy:3, feminine:9, tomboy:0,
+    romantic:5, grunge:0, glam:5, cozy:5, social:6, homebody:4,
+    chaotic:2, reserved:3, suburban:10, urban:2, colorful:9,
+    muted:1, sensual:2, wholesome:9, indie:2, domestic:7
+  },
+  subtitle: "The Suburban Optimist",
+  description:
+    "You are Theodore: pink plaid purses, little heels, embroidered jeans, iced coffee, a colorful compact car and the conviction that an ordinary Tuesday can still be cute. Your world is unapologetically feminine and remarkably functional."
+},
+
+"Cole": {
+  profile: {
+    y2k:7, retro:2, polished:1, messy:6, feminine:3, tomboy:6,
+    romantic:4, grunge:2, glam:0, cozy:5, social:9, homebody:2,
+    chaotic:8, reserved:1, suburban:9, urban:1, colorful:8,
+    muted:2, sensual:0, wholesome:8, indie:5, domestic:3
+  },
+  subtitle: "The Endless Summer Adolescent",
+  description:
+    "You are Cole: carnivals, gelato, bikes at dusk, suburban kitchens and shopping carts being used incorrectly. You are the aesthetic equivalent of summer vacation lasting about three weeks longer than it logically should."
+},
+
+"Benjamin": {
+  profile: {
+    y2k:7, retro:4, polished:3, messy:5, feminine:5, tomboy:3,
+    romantic:5, grunge:2, glam:1, cozy:10, social:5, homebody:8,
+    chaotic:3, reserved:4, suburban:8, urban:1, colorful:5,
+    muted:5, sensual:1, wholesome:10, indie:5, domestic:8
+  },
+  subtitle: "The Soft Domestic Nostalgic",
+  description:
+    "You are Benjamin: milkshake counters, CDs in the car, bracelets beside a digital watch, floral details and rooms made for actually living in. You are nostalgia at its least dramatic and most comforting."
+},
+
+"Lucas": {
+  profile: {
+    y2k:8, retro:1, polished:1, messy:8, feminine:3, tomboy:6,
+    romantic:1, grunge:5, glam:1, cozy:2, social:10, homebody:0,
+    chaotic:10, reserved:0, suburban:7, urban:4, colorful:7,
+    muted:2, sensual:3, wholesome:2, indie:4, domestic:1
+  },
+  subtitle: "The Social Hazard",
+  description:
+    "You are Lucas: cards, beer, cigarettes, giant sunglasses, flip phones and an evening that has escaped adult supervision. You do not merely attend the function. You become part of whatever story people tell about it later."
+},
+
+"Jack": {
+  profile: {
+    y2k:10, retro:1, polished:5, messy:6, feminine:10, tomboy:0,
+    romantic:2, grunge:1, glam:9, cozy:2, social:10, homebody:0,
+    chaotic:9, reserved:0, suburban:7, urban:6, colorful:10,
+    muted:0, sensual:8, wholesome:1, indie:2, domestic:1
+  },
+  subtitle: "The Hot-Pink Party Emergency",
+  description:
+    "You are Jack: hot pink, tiny tops, denim miniskirts, digital cameras, enormous sunglasses and enough lip gloss to alter local weather patterns. You are aggressively social, aggressively feminine and constitutionally incapable of beige."
+},
+
+"Miles": {
+  profile: {
+    y2k:6, retro:3, polished:2, messy:7, feminine:4, tomboy:6,
+    romantic:2, grunge:8, glam:2, cozy:2, social:5, homebody:3,
+    chaotic:6, reserved:7, suburban:3, urban:7, colorful:2,
+    muted:8, sensual:6, wholesome:1, indie:7, domestic:1
+  },
+  subtitle: "The Jaded Casual",
+  description:
+    "You are Miles: loose jeans, tank tops, cigarettes, wine, beer, messy hair and sunglasses hanging out a car window. You are casual in a way that somehow becomes a complete aesthetic once nobody is trying too hard."
+},
+
+"Henry": {
+  profile: {
+    y2k:10, retro:1, polished:2, messy:10, feminine:7, tomboy:2,
+    romantic:2, grunge:3, glam:4, cozy:5, social:9, homebody:2,
+    chaotic:9, reserved:1, suburban:10, urban:2, colorful:7,
+    muted:2, sensual:3, wholesome:4, indie:2, domestic:3
+  },
+  subtitle: "The Mall-Girl Catastrophe",
+  description:
+    "You are Henry: Uggs, low-rise jeans, tiny tanks, candles, shopping bags, energy drinks and a bedroom floor that has ceased to function as architecture. You are young, loud, suburban and gloriously overcommitted to the mall."
+},
+
+"William": {
+  profile: {
+    y2k:7, retro:5, polished:9, messy:1, feminine:9, tomboy:1,
+    romantic:5, grunge:0, glam:6, cozy:4, social:5, homebody:4,
+    chaotic:1, reserved:5, suburban:7, urban:4, colorful:4,
+    muted:6, sensual:5, wholesome:7, indie:1, domestic:6
+  },
+  subtitle: "The Composed Everyday Woman",
+  description:
+    "You are William: fitted tanks, wedges, bootcut jeans, little dresses and a shoulder bag that actually contains what you need. You are feminine without spectacle, grown without stiffness and mysteriously more put-together than Henry."
+},
+
+"David": {
+  profile: {
+    y2k:10, retro:1, polished:6, messy:4, feminine:10, tomboy:0,
+    romantic:4, grunge:0, glam:8, cozy:3, social:7, homebody:3,
+    chaotic:5, reserved:2, suburban:9, urban:3, colorful:10,
+    muted:0, sensual:4, wholesome:6, indie:1, domestic:4
+  },
+  subtitle: "The Pink Y2K Maximalist",
+  description:
+    "You are David: glossy pink accessories, little handbags, French tips, tracksuits and the deeply sincere conviction that one more pink object cannot possibly hurt. You are bright, feminine, unmistakably 2000s and allergic to visual restraint."
+},
+
+"Victor": {
+  profile: {
+    y2k:8, retro:2, polished:5, messy:4, feminine:6, tomboy:4,
+    romantic:3, grunge:5, glam:3, cozy:4, social:5, homebody:4,
+    chaotic:4, reserved:5, suburban:6, urban:4, colorful:4,
+    muted:6, sensual:3, wholesome:6, indie:7, domestic:3
+  },
+  subtitle: "The Low-Key 2000s Girl",
+  description:
+    "You are Victor: worn Converse, soft makeup, casual layers, an old palette and a life that looks naturally preserved from the 2000s. You are neither pristine nor chaotic. You simply look like somebody could find you in an old photo folder and immediately know the year."
+}
+
+};
+
+
+/*
+============================================================
+QUIZ ENGINE
+============================================================
+*/
+
+let currentQuestion = 0;
+
+let userScores = {};
+
+TRAITS.forEach(trait => {
+  userScores[trait] = 0;
+});
+
+
+const quizScreen = document.getElementById("quiz-screen");
+const resultScreen = document.getElementById("result-screen");
+const questionNumber = document.getElementById("question-number");
+const questionText = document.getElementById("question-text");
+const answersBox = document.getElementById("answers");
+const progress = document.getElementById("progress");
+
+
+function showQuestion() {
+
+  const question = questions[currentQuestion];
+
+  questionNumber.textContent =
+    "Question " +
+    String(currentQuestion + 1).padStart(2, "0") +
+    " of " +
+    String(questions.length).padStart(2, "0");
+
+  questionText.textContent = question.q;
+
+  progress.style.width =
+    ((currentQuestion / questions.length) * 100) + "%";
+
+  answersBox.innerHTML = "";
+
+  question.a.forEach(answer => {
+
+    const button = document.createElement("button");
+
+    button.className = "answer";
+    button.textContent = answer.text;
+
+    button.addEventListener("click", () => {
+      selectAnswer(answer.score);
+    });
+
+    answersBox.appendChild(button);
+
+  });
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+function selectAnswer(score) {
+
+  Object.entries(score).forEach(([trait, amount]) => {
+
+    if (userScores[trait] === undefined) {
+      userScores[trait] = 0;
+    }
+
+    userScores[trait] += amount;
+
+  });
+
+  currentQuestion++;
+
+  if (currentQuestion < questions.length) {
+    showQuestion();
+  } else {
+    showResults();
+  }
+}
+
+
+/*
+============================================================
+SCORING
+============================================================
+
+First we normalize the user's raw answers onto a 0–10 scale.
+
+Then we compare that aesthetic fingerprint with each result.
+
+Smaller distance = better match.
+*/
+
+function normalizeUserScores() {
+
+  const normalized = {};
+
+  TRAITS.forEach(trait => {
+
+    let theoreticalMax = 0;
+
+    questions.forEach(question => {
+
+      let highestInQuestion = 0;
+
+      question.a.forEach(answer => {
+
+        const value = answer.score[trait] || 0;
+
+        if (value > highestInQuestion) {
+          highestInQuestion = value;
+        }
+
+      });
+
+      theoreticalMax += highestInQuestion;
+
+    });
+
+    if (theoreticalMax === 0) {
+      normalized[trait] = 0;
+    } else {
+      normalized[trait] =
+        (userScores[trait] / theoreticalMax) * 10;
+    }
+
+  });
+
+  return normalized;
+}
+
+
+function calculateSimilarity(user, profile) {
+
+  let totalDistance = 0;
+  let traitCount = 0;
+
+  TRAITS.forEach(trait => {
+
+    const userValue = user[trait] || 0;
+    const resultValue = profile[trait] || 0;
+
+    const difference = userValue - resultValue;
+
+    totalDistance += difference * difference;
+    traitCount++;
+
+  });
+
+  const rootMeanSquareDistance =
+    Math.sqrt(totalDistance / traitCount);
+
+  let similarity =
+    100 - (rootMeanSquareDistance * 10);
+
+  similarity = Math.max(0, Math.min(100, similarity));
+
+  return similarity;
+}
+
+
+function showResults() {
+
+  progress.style.width = "100%";
+
+  const normalizedUser = normalizeUserScores();
+
+  let rankings = Object.entries(RESULTS).map(([name, data]) => {
+
+    return {
+      name: name,
+      subtitle: data.subtitle,
+      description: data.description,
+      similarity: calculateSimilarity(
+        normalizedUser,
+        data.profile
+      )
+    };
+
+  });
+
+  rankings.sort((a, b) => b.similarity - a.similarity);
+
+  /*
+  Turn the top scores into relative percentages.
+
+  This makes the result read like:
+  61% Henry
+  24% Jack
+  15% Benjamin
+
+  instead of showing three unrelated similarity numbers.
+  */
+
+  const topThree = rankings.slice(0, 3);
+
+  const exponent = 6;
+
+  const weights = topThree.map(result =>
+    Math.pow(Math.max(result.similarity, 1), exponent)
+  );
+
+  const totalWeight =
+    weights.reduce((sum, weight) => sum + weight, 0);
+
+  let percentages = weights.map(weight =>
+    Math.round((weight / totalWeight) * 100)
+  );
+
+  const percentageDifference =
+    100 - percentages.reduce((sum, value) => sum + value, 0);
+
+  percentages[0] += percentageDifference;
+
+
+  const winner = topThree[0];
+
+  quizScreen.classList.add("hidden");
+  resultScreen.classList.remove("hidden");
+
+  document.getElementById("result-name").textContent =
+    winner.name;
+
+  document.getElementById("result-subtitle").textContent =
+    winner.subtitle;
+
+  document.getElementById("result-description").textContent =
+    winner.description;
+
+
+  const matches = document.getElementById("matches");
+
+  matches.innerHTML = "";
+
+  topThree.forEach((result, index) => {
+
+    const row = document.createElement("div");
+    row.className = "match";
+
+    const name = document.createElement("div");
+    name.className = "match-name";
+    name.textContent = result.name;
+
+    const shell = document.createElement("div");
+    shell.className = "match-bar-shell";
+
+    const bar = document.createElement("div");
+    bar.className = "match-bar";
+    bar.style.width = percentages[index] + "%";
+
+    shell.appendChild(bar);
+
+    const percent = document.createElement("div");
+    percent.className = "match-percent";
+    percent.textContent = percentages[index] + "%";
+
+    row.appendChild(name);
+    row.appendChild(shell);
+    row.appendChild(percent);
+
+    matches.appendChild(row);
+
+  });
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+/*
+============================================================
+RESTART
+============================================================
+*/
+
+function restartQuiz() {
+
+  currentQuestion = 0;
+
+  userScores = {};
+
+  TRAITS.forEach(trait => {
+    userScores[trait] = 0;
+  });
+
+  resultScreen.classList.add("hidden");
+  quizScreen.classList.remove("hidden");
+
+  showQuestion();
+}
+
+
+/*
+============================================================
+BEGIN
+============================================================
+*/
+
+showQuestion();
+
+</script>
+
+</body>
+</html>
